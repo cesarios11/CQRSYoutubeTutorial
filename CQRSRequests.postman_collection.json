@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "9e2e0ed3-69a0-4f98-aca5-a9d3d75c5f3a",
+		"name": "CQRSRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4127139"
+	},
+	"item": [
+		{
+			"name": "GetAllTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7187/api/Tasks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7187",
+					"path": [
+						"api",
+						"Tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTaskById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7187/api/Tasks/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7187",
+					"path": [
+						"api",
+						"Tasks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"title 2\",\r\n    \"description\":\"description 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7187/api/Tasks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7187",
+					"path": [
+						"api",
+						"Tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTask",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"title\": \"title 2 updated\",\r\n    \"description\": \"description 2 updated\",\r\n    \"isCompleted\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7187/api/Tasks/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7187",
+					"path": [
+						"api",
+						"Tasks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTask",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7187/api/Tasks/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7187",
+					"path": [
+						"api",
+						"Tasks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
